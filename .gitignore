@@ -1,0 +1,12 @@
+*.csproj
+*.sln
+*.userprefs
+Build
+Library
+Temp
+obj
+UWP
+/*.csproj
+/Assets/StreamingAssets/Asset Bundles
+/.vs
+Logs/
