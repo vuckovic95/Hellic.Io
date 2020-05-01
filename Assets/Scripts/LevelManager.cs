@@ -8,36 +8,52 @@ public class LevelManager : MonoBehaviour
 {
     [BoxGroup("Level List")]public List<Level> levels = new List<Level>();
     [BoxGroup("Active Level")] public Level activeLevel;
-
-    [BoxGroup("Platforms Holder")] public Transform platformsHolder;
-
-    [BoxGroup("Boundaries Holder")] public Transform boundariesHolder;
-
-    [BoxGroup("Platform Prefab")] public GameObject platformPrefab;
-
-    [BoxGroup("Boundary Prefab")] public GameObject boundaryPrefab;
+    [BoxGroup("Holders")] public Transform platformsHolder;
+    [BoxGroup("Holders")] public Transform boundariesHolder;
+    [BoxGroup("Holders")] public Transform foodHolder;
+    [BoxGroup("Holders")] public Transform obstacleHolder;
+    [BoxGroup("Prefabs")] public GameObject platformPrefab;
+    [BoxGroup("Prefabs")] public GameObject boundaryPrefab;
+    [BoxGroup("Prefabs")] public GameObject foodPrefab;
+    [BoxGroup("Prefabs")] public GameObject obstaclePrefab;
 
     [BoxGroup("Parameters")] public int heightAndWidth;
+    [BoxGroup("Parameters")] public int foodPopulation;
+    [BoxGroup("Parameters")] public int obstaclesPopulation;
     [BoxGroup("Parameters")] public Vector3 startPos;
     [BoxGroup("Parameters")] public int blockNum = 1;
     [BoxGroup("Parameters")] public float offset;
 
     [HideInInspector] public List<GameObject> platforms = new List<GameObject>();
     [HideInInspector] public List<GameObject> boundaries = new List<GameObject>();
+    [HideInInspector] public List<GameObject> food = new List<GameObject>();
+    [HideInInspector] public List<GameObject> obstacles = new List<GameObject>();
+    [HideInInspector] public List<GameObject> foodCurrent = new List<GameObject>();
+
+    private List<GameObject> currentPlatformList = new List<GameObject>();
 
     private void Awake()
     {
         GlobalManager.LevelManager = this;
         SpawnArena();
+        PopulateFood();
+        PopulateObstacles();
     }
 
     public void SpawnLevel()
     {
-        if (GlobalManager.SaveData.level > levels.Count)
+        //if (GlobalManager.SaveData.level > levels.Count)
+        //{
+        //    GlobalManager.SaveData.ResetLevels();
+        //}
+        //activeLevel = levels[GlobalManager.SaveData.level - 1];
+
+        foreach(GameObject o in platforms)
         {
-            GlobalManager.SaveData.ResetLevels();
+            currentPlatformList.Add(o);
         }
-        activeLevel = levels[GlobalManager.SaveData.level - 1];
+        SpawnObstacles();
+        SpawnFood();
     }
 
     void SpawnArena()
@@ -116,12 +132,70 @@ public class LevelManager : MonoBehaviour
 
     void SpawnObstacles()
     {
-        int randomObstacles = Random.Range(0, 6);
-        
-        for(int i = 0; i < randomObstacles; i++)
+        foreach(GameObject o in obstacles)
         {
-            //todo
+            int random = Random.Range(0, currentPlatformList.Count);
+
+            o.SetActive(true);
+            o.transform.position = new Vector3(currentPlatformList[random].transform.position.x,
+                                              currentPlatformList[random].transform.position.y + 2,
+                                              currentPlatformList[random].transform.position.z);
+            currentPlatformList.RemoveAt(random);
         }
+    }
+
+    void SpawnFood()
+    {
+        foreach(Transform tr in foodHolder)
+        {
+            tr.gameObject.SetActive(true);
+            foodCurrent.Add(tr.gameObject);
+
+            int random = Random.Range(0, platforms.Count);
+            float randomOffsetX = Random.Range(-1.5f, 1.5f);
+            float randomOffsetZ = Random.Range(-1.5f, 1.5f);
+
+            tr.position = new Vector3(platforms[random].transform.position.x + randomOffsetX,
+                                      platforms[random].transform.position.y + 1.5f,
+                                      platforms[random].transform.position.z + randomOffsetZ);
+        }
+    }
+
+    void PopulateFood()
+    {
+        for(int i = 0; i < foodPopulation; i++)
+        {
+            GameObject _food = Instantiate(foodPrefab);
+            food.Add(_food);
+            _food.SetActive(false);
+            _food.transform.parent = foodHolder.transform;
+        }
+    }
+
+    void PopulateObstacles()
+    {
+        for (int i = 0; i < obstaclesPopulation; i++)
+        {
+            GameObject obst = Instantiate(obstaclePrefab);
+            obstacles.Add(obst);
+            obst.SetActive(false);
+            obst.transform.parent = obstacleHolder.transform;
+        }
+    }
+
+    public void ResetLevel()
+    {       
+        foreach(GameObject o in foodCurrent)
+        {
+            o.SetActive(false);
+        }
+
+        foreach(GameObject o in obstacles)
+        {
+            o.SetActive(false);
+        }
+        foodCurrent.Clear();
+        currentPlatformList.Clear();
     }
 }
 

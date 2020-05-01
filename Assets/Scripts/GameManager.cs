@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
         clickable = false;
         ChangeState("Menu");
         GlobalManager.UI_Manager.SwitchPanel("Menu");
+        GlobalManager.Player.SpawnPlayer();
         //GlobalManager.LevelManager.SpawnLevel();
     }
 
