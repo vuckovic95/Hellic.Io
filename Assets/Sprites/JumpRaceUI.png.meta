@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: c1ead5f07ee04174688741b04b47bf6e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2627136996528606306
+    second: JumpRaceUI_0
+  - first:
+      213: 1995965788122317834
+    second: JumpRaceUI_1
+  - first:
+      213: -6577530435701705336
+    second: JumpRaceUI_2
+  - first:
+      213: 6164454158322009813
+    second: JumpRaceUI_3
+  - first:
+      213: -6149958245424918556
+    second: JumpRaceUI_4
+  - first:
+      213: -8033738147686276207
+    second: JumpRaceUI_5
+  - first:
+      213: 4392768508505170971
+    second: JumpRaceUI_6
+  - first:
+      213: 5368046152523847940
+    second: JumpRaceUI_7
+  - first:
+      213: -8903975961037640806
+    second: JumpRaceUI_8
+  - first:
+      213: -8164781342998588578
+    second: JumpRaceUI_9
+  - first:
+      213: -471202648450101896
+    second: JumpRaceUI_10
+  - first:
+      213: -2131761780843793718
+    second: JumpRaceUI_11
+  - first:
+      213: -2827904982696199519
+    second: JumpRaceUI_12
+  - first:
+      213: -1936765173493261018
+    second: JumpRaceUI_13
+  - first:
+      213: -6496840535980241051
+    second: JumpRaceUI_14
+  - first:
+      213: -5181100230465170060
+    second: JumpRaceUI_15
+  - first:
+      213: 6478079620551202853
+    second: JumpRaceUI_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JumpRaceUI_0
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2303
+        width: 3294
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410db75a79de48b419f0436bd209cfa1
+      internalID: -2627136996528606306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1013
+        width: 2108
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb47c186b83b404abefde443320dca2
+      internalID: 1995965788122317834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_2
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 1726
+        width: 127
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071897decc71d1d41a04b592a6a368fd
+      internalID: -6577530435701705336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_3
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 1724
+        width: 140
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1e47ced5eab6246b807c6e9a1095c5
+      internalID: 6164454158322009813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_4
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1724
+        width: 116
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d87dd25f52e08f4c8399a3c59acb71d
+      internalID: -6149958245424918556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_5
+      rect:
+        serializedVersion: 2
+        x: 2796
+        y: 1726
+        width: 95
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb208fd2bc00a12439a87876f9e7ed4a
+      internalID: -8033738147686276207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_6
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 1726
+        width: 136
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e033c20a5ab45a4bb412d673d0b8464
+      internalID: 4392768508505170971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_7
+      rect:
+        serializedVersion: 2
+        x: 3054
+        y: 1726
+        width: 20
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5498b7b505575d64abeefff753f6a0e0
+      internalID: 5368046152523847940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_8
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 1726
+        width: 86
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7179e28ec2ace24aa9ffa9f945c6215
+      internalID: -8903975961037640806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_9
+      rect:
+        serializedVersion: 2
+        x: 3219
+        y: 1726
+        width: 95
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c0958e17f16b6409e4bf60ffa09014
+      internalID: -8164781342998588578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_10
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 1726
+        width: 122
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f690dbb2bcdf4f44cb9dad577be79077
+      internalID: -471202648450101896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_11
+      rect:
+        serializedVersion: 2
+        x: 3638
+        y: 1013
+        width: 997
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55220ffc9fac9464481dad532bb0559b
+      internalID: -2131761780843793718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_12
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 1013
+        width: 1002
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a20d9d40bef094499529600903e0aa
+      internalID: -2827904982696199519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 748
+        height: 736
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03e77399882bcc44b675f905857e8e9
+      internalID: -1936765173493261018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_14
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 0
+        width: 826
+        height: 753
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631d9b887a3eef24981ac430d6878592
+      internalID: -6496840535980241051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_15
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 0
+        width: 887
+        height: 753
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a93f6b1068c8814c88b2c34d766bf9c
+      internalID: -5181100230465170060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpRaceUI_16
+      rect:
+        serializedVersion: 2
+        x: 3901
+        y: 0
+        width: 734
+        height: 733
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce03537acdb1ae4fa97edcf28d64d51
+      internalID: 6478079620551202853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b4b6a558e241bce49a4cc76697ed902a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
