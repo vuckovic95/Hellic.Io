@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         GlobalManager.GameManager = this;
+        SetAppSettings();
     }
 
     // Start is called before the first frame update
@@ -35,6 +36,12 @@ public class GameManager : MonoBehaviour
         GlobalManager.UI_Manager.SwitchPanel("Menu");
         GlobalManager.Player.SpawnPlayer();
         //GlobalManager.LevelManager.SpawnLevel();
+    }
+
+    private void SetAppSettings()
+    {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
     }
 
     public void ChangeState(string _state)

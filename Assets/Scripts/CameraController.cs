@@ -15,8 +15,8 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        //Vector3 derivedPosition = follow.transform.position;
         tr.position = follow.transform.position;
+        //Vector3 derivedPosition = follow.transform.position;
         //tr.position = Vector3.Lerp(tr.position, derivedPosition, 0.125f);
     }
 }
