@@ -1138,6 +1138,7 @@ MonoBehaviour:
   food: []
   obstacles: []
   foodCurrent: []
+  currentPlatformList: []
 --- !u!1 &1158171484
 GameObject:
   m_ObjectHideFlags: 0

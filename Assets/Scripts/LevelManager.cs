@@ -29,8 +29,7 @@ public class LevelManager : MonoBehaviour
     [HideInInspector] public List<GameObject> food = new List<GameObject>();
     [HideInInspector] public List<GameObject> obstacles = new List<GameObject>();
     [HideInInspector] public List<GameObject> foodCurrent = new List<GameObject>();
-
-    private List<GameObject> currentPlatformList = new List<GameObject>();
+    [HideInInspector] public List<GameObject> currentPlatformList = new List<GameObject>();
 
     private void Awake()
     {
@@ -47,11 +46,11 @@ public class LevelManager : MonoBehaviour
         //    GlobalManager.SaveData.ResetLevels();
         //}
         //activeLevel = levels[GlobalManager.SaveData.level - 1];
-
         foreach(GameObject o in platforms)
         {
             currentPlatformList.Add(o);
         }
+        GlobalManager.Player.SpawnPlayer();
         SpawnObstacles();
         SpawnFood();
     }
